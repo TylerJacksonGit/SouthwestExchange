@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/png" href="./logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Southwest Exchange</title>
+  <title>About - Southwest Exchange</title>
   <!-- Google Fonts for Modern Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,9 @@
 <body>
   <!-- Top Header -->
   <header class="top-header">
-    <h1 class="logo-text">SOUTH WEST<br><span class="highlight">EXCHANGE</span></h1>
+    <a href="/index.html" style="text-decoration: none;">
+      <h1 class="logo-text">SOUTH WEST<br><span class="highlight">EXCHANGE</span></h1>
+    </a>
     <img src="./logo.png" alt="Southwest Exchange Logo" class="logo-image top-logo">
   </header>
 
@@ -32,51 +34,42 @@
     <div class="divider-line"></div>
   </div>
 
-  <!-- Slideshow Banner -->
-  <div class="slideshow-container" id="slideshow">
-    <div class="slide-loading">Loading eBay Listings...</div>
-  </div>
-
-  <!-- Geometric Divider -->
-  <div class="divider" id="slide-indicators">
-    <div class="divider-line"></div>
-    <div class="diamond slide-dot" data-index="0"></div>
-    <div class="diamond slide-dot center-diamond" data-index="1"></div>
-    <div class="diamond slide-dot" data-index="2"></div>
-    <div class="divider-line"></div>
-  </div>
-
   <!-- Main Southwest Thematic Area -->
   <main class="main-layout">
     <!-- Background spans the whole area: Arizona -> NM -> Texas -->
     <div class="thematic-backdrop"></div>
 
-    <!-- Lower Text / Info Section -->
+    <!-- About Content Section -->
     <section class="info-section">
-      <div class="content-card glass-panel">
-        <div class="text-area">
+      <div class="content-card glass-panel" style="max-width: 900px;">
+        <h2 style="color: var(--sw-gold); font-size: 2.5rem; margin-bottom: 2rem;">About Southwest Exchange</h2>
+        
+        <div class="text-area" style="text-align: left;">
           <p>
-            Welcome to the best exchange in the Southwest. Coins, metals, nick nacks, antiques, and curiosities of
-            the world, all delivered from the Southwest USA.
+            At Southwest Exchange, we specialize in sourcing and supplying precious metals, historic currency, and unique collectibles. What started as a personal interest in the heritage of the American Southwest has grown into a dedicated operation across eBay, Whatnot, and Mercari.
           </p>
           <p>
-            Here at the Southwest Exchange, we pride ourselves on authentic finds and building a community of passionate
-            collectors. Explore our storefronts and connections below.
+            Our focus is straightforward: providing collectors with authentic items, transparent service, and secure, reliable shipping.
           </p>
-        </div>
 
-        <div class="reviews-section">
-          <h3>Community Reviews</h3>
-          <div class="review-box">
-            <span class="stars">★★★★★</span>
-            <p>"Tyler is a fantastic host on Whatnot, always has the best silver and unique antiques! Excellent
-              packaging and super fast shipping!" - <strong>Whatnot Buyer</strong></p>
-          </div>
-          <div class="review-box">
-            <span class="stars">★★★★★</span>
-            <p>"Amazing finds and items exactly as described. Highly recommend the Southwest Exchange!" - <strong>eBay
-                Buyer</strong></p>
-          </div>
+          <h3 style="color: var(--sw-terra); font-size: 1.8rem; margin: 2rem 0 1rem;">Our Inventory</h3>
+          <p>
+            We maintain a rotating selection of high-quality items for both investors and hobbyists:
+          </p>
+          <ul style="color: rgba(235, 216, 183, 0.9); font-size: 1.15rem; line-height: 1.8; margin-bottom: 2rem; padding-left: 2rem;">
+            <li><strong>Bullion & Precious Metals:</strong> Gold, silver, and copper pieces, ranging from standard 1oz Indian Head designs to limited mintage and colorized rounds.</li>
+            <li><strong>Historic Currency:</strong> A curated selection of vintage paper money, including Silver Certificates ($1 1935/1957), Federal Reserve Star Notes, and Red Seal notes.</li>
+            <li><strong>Pop Culture & Modern Numismatics:</strong> Modern 1oz silver collectibles and themed chibi coins for fans and contemporary collectors.</li>
+            <li><strong>Antiques & Regional Finds:</strong> A diverse mix of regional antiques and unique apparel sourced from across the Southwest.</li>
+          </ul>
+
+          <h3 style="color: var(--sw-terra); font-size: 1.8rem; margin: 2rem 0 1rem;">The Exchange Community</h3>
+          <p>
+            Whether you’re bidding in our live Whatnot auctions or browsing our eBay listings, we prioritize a professional and efficient experience. Every item we sell is handled with care, ensuring that your investment—whether it’s your first ounce of copper or a rare star note—arrives exactly as described.
+          </p>
+          <p>
+            Thank you for choosing Southwest Exchange as your partner in collecting.
+          </p>
         </div>
       </div>
     </section>
@@ -85,16 +78,16 @@
     <footer class="bottom-links glass-panel-dark">
       <div class="footer-layout">
         <div class="links-grid">
-          <a href="/about.html" class="hard-link">About</a>
+          <a href="/index.html" class="hard-link">Home</a>
           <a href="#contact" class="hard-link">Contact</a>
 
           <!-- Social and External Links -->
           <a href="https://www.facebook.com/swexchange" target="_blank" rel="noopener noreferrer" class="hard-link">
-            <!-- <img id="sns1" src="pages/sns2.png" alt="Facebook"> --> Facebook
+            Facebook
           </a>
           <a href="https://www.whatnot.com/user/tylerswexchange" target="_blank" rel="noopener noreferrer"
             class="hard-link">
-            <!-- <img id="sns2" src="pages/sns5v3.png" alt="Whatnot"> --> Whatnot
+            Whatnot
           </a>
           <a href="https://www.ebay.com/usr/swexchange" target="_blank" rel="noopener noreferrer" class="hard-link">
             Ebay

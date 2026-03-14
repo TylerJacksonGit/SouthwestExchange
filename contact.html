@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/png" href="./logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Southwest Exchange</title>
+  <title>Contact Us - Southwest Exchange</title>
   <!-- Google Fonts for Modern Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,9 @@
 <body>
   <!-- Top Header -->
   <header class="top-header">
-    <h1 class="logo-text">SOUTH WEST<br><span class="highlight">EXCHANGE</span></h1>
+    <a href="/index.html" style="text-decoration: none;">
+      <h1 class="logo-text">SOUTH WEST<br><span class="highlight">EXCHANGE</span></h1>
+    </a>
     <img src="./logo.png" alt="Southwest Exchange Logo" class="logo-image top-logo">
   </header>
 
@@ -32,52 +34,52 @@
     <div class="divider-line"></div>
   </div>
 
-  <!-- Slideshow Banner -->
-  <div class="slideshow-container" id="slideshow">
-    <div class="slide-loading">Loading eBay Listings...</div>
-  </div>
-
-  <!-- Geometric Divider -->
-  <div class="divider" id="slide-indicators">
-    <div class="divider-line"></div>
-    <div class="diamond slide-dot" data-index="0"></div>
-    <div class="diamond slide-dot center-diamond" data-index="1"></div>
-    <div class="diamond slide-dot" data-index="2"></div>
-    <div class="divider-line"></div>
-  </div>
-
   <!-- Main Southwest Thematic Area -->
   <main class="main-layout">
     <!-- Background spans the whole area: Arizona -> NM -> Texas -->
     <div class="thematic-backdrop"></div>
 
-    <!-- Lower Text / Info Section -->
+    <!-- Contact Content Section -->
     <section class="info-section">
-      <div class="content-card glass-panel">
-        <div class="text-area">
-          <p>
-            Welcome to the best exchange in the Southwest. Coins, metals, nick nacks, antiques, and curiosities of
-            the world, all delivered from the Southwest USA.
-          </p>
-          <p>
-            Here at the Southwest Exchange, we pride ourselves on authentic finds and building a community of passionate
-            collectors. Explore our storefronts and connections below.
-          </p>
-        </div>
+      <div class="content-card glass-panel" style="max-width: 700px;">
+        <h2 style="color: var(--sw-gold); font-size: 2.5rem; margin-bottom: 0.5rem;">Get in Touch</h2>
+        <p style="color: rgba(235, 216, 183, 0.9); margin-bottom: 2rem; font-size: 1.1rem;">
+          Have questions about shipping, inventory, or a specific item? Send us a message and we'll get right back to you.
+        </p>
+        
+        <!-- Web3Forms Contact Form -->
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+          <input type="hidden" name="access_key" value="f4c0d9b1-82a7-4a7e-97a5-a3551cab077b">
+          
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="John Doe">
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="john@example.com">
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required placeholder="Question about an item">
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="How can we help you?"></textarea>
+          </div>
+          
+          <!-- Bot Protection (Honeypot) -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          
+          <!-- Optional: Redirect after successful submission to a custom thank you page -->
+          <!-- <input type="hidden" name="redirect" value="https://yourwebsite.com/thanks.html"> -->
+          
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
 
-        <div class="reviews-section">
-          <h3>Community Reviews</h3>
-          <div class="review-box">
-            <span class="stars">★★★★★</span>
-            <p>"Tyler is a fantastic host on Whatnot, always has the best silver and unique antiques! Excellent
-              packaging and super fast shipping!" - <strong>Whatnot Buyer</strong></p>
-          </div>
-          <div class="review-box">
-            <span class="stars">★★★★★</span>
-            <p>"Amazing finds and items exactly as described. Highly recommend the Southwest Exchange!" - <strong>eBay
-                Buyer</strong></p>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -85,16 +87,16 @@
     <footer class="bottom-links glass-panel-dark">
       <div class="footer-layout">
         <div class="links-grid">
+          <a href="/index.html" class="hard-link">Home</a>
           <a href="/about.html" class="hard-link">About</a>
-          <a href="#contact" class="hard-link">Contact</a>
 
           <!-- Social and External Links -->
           <a href="https://www.facebook.com/swexchange" target="_blank" rel="noopener noreferrer" class="hard-link">
-            <!-- <img id="sns1" src="pages/sns2.png" alt="Facebook"> --> Facebook
+            Facebook
           </a>
           <a href="https://www.whatnot.com/user/tylerswexchange" target="_blank" rel="noopener noreferrer"
             class="hard-link">
-            <!-- <img id="sns2" src="pages/sns5v3.png" alt="Whatnot"> --> Whatnot
+            Whatnot
           </a>
           <a href="https://www.ebay.com/usr/swexchange" target="_blank" rel="noopener noreferrer" class="hard-link">
             Ebay
@@ -104,7 +106,6 @@
             Insta
           </a>
           <a href="/metal-tracker.html" class="hard-link">Metal Tracker</a>
-          <a href="/contact.html" class="hard-link">Contact</a>
         </div>
         <div class="footer-logo-container">
           <img src="./logo.png" alt="Southwest Exchange Logo" class="logo-image bottom-logo">
