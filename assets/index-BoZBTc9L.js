@@ -1,0 +1,10 @@
+(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))o(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const l of t.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&o(l)}).observe(document,{childList:!0,subtree:!0});function i(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function o(e){if(e.ep)return;e.ep=!0;const t=i(e);fetch(e.href,t)}})();const d=[{image:"/slide1.jpg",link:"https://www.ebay.com/usr/swexchange",title:"Checkout the Bay for our items, find yours today"},{image:"/slide2.jpg",link:"https://www.mercari.com/u/swexchange/?sv=0",title:"Cloths and Wearables from the South West on Mercari"},{image:"/slide3.jpg",link:"https://www.whatnot.com/user/tylerswexchange",title:"Live Auctions on Whatnot"}];let s=0,c;function a(){const n=document.getElementById("slideshow");if(!n||d.length===0)return;const r=d[s],i=n.querySelector(".slide-link");i&&i.remove(),n.innerHTML=`
+    <a href="${r.link}" target="_blank" rel="noopener noreferrer" class="slide-link" style="display:block; width:100%; height:100%;">
+      <div class="slide-bg fade-in" style="background-image: url('${r.image}');">
+        <div class="slide-overlay">
+          <h2>${r.title}</h2>
+          <span class="slide-cta">Click to view our store →</span>
+        </div>
+      </div>
+    </a>
+  `,document.querySelectorAll(".slide-dot").forEach((e,t)=>{t===s?e.classList.add("center-diamond"):e.classList.remove("center-diamond")})}function f(){s=(s+1)%d.length,a()}function u(){c&&clearInterval(c),c=window.setInterval(f,4e3)}document.addEventListener("DOMContentLoaded",()=>{a(),u(),document.querySelectorAll(".slide-dot").forEach(r=>{r.addEventListener("click",i=>{const o=i.target;s=parseInt(o.getAttribute("data-index")||"0",10),a(),u()})})});
